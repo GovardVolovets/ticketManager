@@ -47,7 +47,7 @@ public class AviaSouls {
         Arrays.sort(result);
         return result;
     }
-    public Ticket[] searchAndSortBy(String from, String to, Comparator<Ticket> comparator) {
+    public Ticket[] search(String from, String to, Comparator<Ticket> comparator) {
         Ticket[] result = new Ticket[0];
         for (Ticket ticket : tickets) {
             if (ticket.getFrom().equals(from) && ticket.getTo().equals(to)) {
